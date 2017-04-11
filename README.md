@@ -20,9 +20,10 @@ React Boilerplate following [Airbnb's JavaScript (ES6) Style Guide](https://gith
 ## Components
 
 - [Babel](https://babeljs.io) for ES6 support.
+- [Chai](http://chaijs.com/) as BDD / TDD assertion library.
 - [ESlint](http://eslint.org) for ES6 linting using Airbnb's JS style guide.
 - [Mocha](https://mochajs.org/) as test framework.
-- [Chai](http://chaijs.com/) as BDD / TDD assertion library.
+- [Nyc](https://github.com/istanbuljs/nyc) for test coverage
 - [React](https://facebook.github.io/react/) as front-end view library.
 - [Webpack](https://webpack.github.io) for bundling of JavaScript modules.
 
@@ -41,7 +42,9 @@ Then open [http://localhost:8080/](http://localhost:8080/) on your web browser.
 
 ### Testing
 
-For testing, run `npm test` in your terminal.
+1. Run `npm test` for simple test.
+2. Run `npm run test:watch` for watch tests.
+3. Run `npm run test:coverage` for test coverage. This will generate a `coverage` folder. Open the `index.html` file in this folder to check the results.
 
 ## Deploying
 
