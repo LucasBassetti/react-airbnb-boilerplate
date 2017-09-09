@@ -1,37 +1,40 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'app/js/main'),
-  devServer: {
-    outputPath: path.join(__dirname, 'build'),
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx'],
-  },
+  entry: path.resolve(__dirname, 'app/js/main.js'),
   output: {
-    path: path.resolve(__dirname, 'build/js'),
-    publicPath: '/js/',
+    path: path.resolve(__dirname, 'docs/'),
+    publicPath: '/',
     filename: 'bundle.js',
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'app'),
+    compress: true,
+    port: 8080,
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   plugins: [
-    new CleanWebpackPlugin(['build']),
     new CopyWebpackPlugin([
       {
-        context: path.resolve(__dirname, 'app/static'),
-        from: '**/*',
-        to: path.resolve(__dirname, 'build'),
+        context: path.resolve(__dirname, 'app/'),
+        from: 'index.html',
+        to: path.resolve(__dirname, 'docs'),
       },
     ]),
   ],
-  devtool: '#eval-source-map',
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$|.jsx$/,
         exclude: /(node_modules|bower_components)/,
-        loaders: ['babel'],
+        use: ['babel-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],
   },

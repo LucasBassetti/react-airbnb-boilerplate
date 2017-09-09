@@ -26,6 +26,8 @@ React Boilerplate following [Airbnb's JavaScript (ES6) Style Guide](https://gith
 - [Nyc](https://github.com/istanbuljs/nyc) for test coverage
 - [React](https://facebook.github.io/react/) as front-end view library.
 - [Webpack](https://webpack.github.io) for bundling of JavaScript modules.
+- [SASS](http://sass-lang.com/) for styles
+- [Postcss](http://postcss.org/) add vendor prefixes in styles
 
 ## Getting Start
 
