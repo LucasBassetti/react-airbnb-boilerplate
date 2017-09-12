@@ -24,11 +24,11 @@ React Boilerplate following [Airbnb's JavaScript (ES6) Style Guide](https://gith
 - [Chai](http://chaijs.com/) as BDD / TDD assertion library.
 - [ESlint](http://eslint.org) for ES6 linting using Airbnb's JS style guide.
 - [Mocha](https://mochajs.org/) as test framework.
-- [Nyc](https://github.com/istanbuljs/nyc) for test coverage
+- [Nyc](https://github.com/istanbuljs/nyc) as test coverage.
 - [React](https://facebook.github.io/react/) as front-end view library.
-- [Webpack](https://webpack.github.io) for bundling of JavaScript modules.
-- [SASS](http://sass-lang.com/) for styles
-- [Postcss](http://postcss.org/) add vendor prefixes in styles
+- [Webpack](https://webpack.github.io) as module bundler.
+- [SASS](http://sass-lang.com/) as css preprocessing.
+- [Postcss](http://postcss.org/) for transforming styles with JS plugins.
 
 ## Getting Start
 
