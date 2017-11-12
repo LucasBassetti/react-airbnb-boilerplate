@@ -27,7 +27,7 @@ React Boilerplate following [Airbnb's JavaScript (ES6) Style Guide](https://gith
 - [Nyc](https://github.com/istanbuljs/nyc) as test coverage.
 - [React](https://facebook.github.io/react/) as front-end view library.
 - [Webpack](https://webpack.github.io) as module bundler.
-- [SASS](http://sass-lang.com/) as css preprocessing.
+- [SASS](http://sass-lang.com/) as CSS preprocessing.
 - [Postcss](http://postcss.org/) for transforming styles with JS plugins.
 
 ## Getting Start
